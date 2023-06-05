@@ -1,0 +1,65 @@
+@import "../components/Navbar/Navbar.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/Button/Button.scss";
+@import "../components/InfoCard/InfoCard.scss";
+@import "../components/Modal/Modal.scss";
+@import "../components/ProjectCard/ProjectCard.scss";
+
+.sidebar {
+  position: fixed;
+  z-index: 2;
+  top: 67px;
+  right: 0;
+  width: 220px;
+  height: calc(100vh - 67px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-left: 1px solid var(--lightGray);
+  background: rgba(254, 254, 254);
+  transition: all 0.4s ease-in-out;
+}
+
+.footer {
+  background-color: var(--primary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+
+  h5 {
+    margin: 1rem;
+    color: var(--white);
+  }
+
+  p {
+    color: var(--white);
+    font-size: smaller;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: var(--secondary);
+    margin: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--white);
+      transition: var(--transition);
+    }
+  }
+}
